@@ -149,7 +149,9 @@ impeach %>%
 
 ```{r}
 
-
+impeach %>%
+  filter(state == "NJ",
+         for_impeachment == "NO")
 
 
 
@@ -159,7 +161,11 @@ impeach %>%
 
 ```{r}
 
-
+impeach %>%
+  filter(for_impeachment == "YES",
+         date_year < 2019) %>%
+  arrange(desc(clinton_percent))
+  
 
 
 
