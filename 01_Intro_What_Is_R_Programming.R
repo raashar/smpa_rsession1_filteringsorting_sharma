@@ -28,7 +28,7 @@
 
 "Billy"
 
-# "Billy" + "Sallie"
+"Billy" + "Sallie"
 
 #well that didn't work. What happened?
 
@@ -43,8 +43,9 @@ c("Billy","Sallie")
 
 myobject <- 1
 
-#now I can tell R to give me the value of myobject by referring to it by its name
+# now I can tell R to give me the value of myobject by referring to it by its name
 myobject
+myobject * 10
 
 #let's try another
 mynames <- c("Billy","Sallie","Tony")
@@ -58,7 +59,7 @@ mynames
 # much in this workshop. 
 # They are one way to pull out only a certain piece of something.
 
-mynames[1]
+mynames[1] # doesn't use a 0 like python or other languages
 
 mynames[3]
 

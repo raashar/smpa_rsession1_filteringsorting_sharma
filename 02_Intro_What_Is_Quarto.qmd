@@ -1,7 +1,7 @@
 ---
 title: "My First Quarto Document"
 author: "Aaron Kessler"
-date: "2/7/2023"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
   html:
     self-contained: true
@@ -10,7 +10,7 @@ format:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(tidyverse) 
+library(tidyverse) # info in chunks is evaluated as code; outside is plain text
 library(lubridate)
 library(janitor)
 
@@ -43,11 +43,16 @@ In what are called **chunks**. Like this:
 
 head(txhousing)
 
+# F1 key shows us information on what a function does--like ?head()
 ```
 
 How do I make one of those? Either go to Insert -\> R... or just CTRL/CMD + SHIFT + I
 
 Let's try it...
+```{r}
+
+```
+
 
 ```{r}
 

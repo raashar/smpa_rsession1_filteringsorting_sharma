@@ -375,7 +375,8 @@ gasprices_weekly
 
 ```{r}
 
-
+gasprices_weekly %>%
+  filter(price == max(price))
 
 
 ```
@@ -384,7 +385,8 @@ gasprices_weekly
 
 ```{r}
 
-
+gasprices_weekly %>%
+  filter(price == min(price))
 
 
 ```
@@ -393,7 +395,11 @@ gasprices_weekly
 
 ```{r}
 
+aug_onward = gasprices_weekly %>%
+  filter(date >= "2022-08-01")
 
+aug_onward %>%
+  filter(price == max(price))
 
 
 ```
